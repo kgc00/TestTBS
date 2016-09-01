@@ -25,7 +25,8 @@ public class CameraZoom : MonoBehaviour
     {
         cameraData.zoom += Input.GetAxis("Mouse ScrollWheel");
 
-        if (cameraData.zoom > cameraData.maxZoom) Camera.main.orthographicSize = cameraData.zoom+ 1;        
-        if (cameraData.zoom < cameraData.minZoom) Camera.main.orthographicSize = cameraData.zoom- 1;
+        if (cameraData.zoom > cameraData.minZoom & (cameraData.zoom < cameraData.maxZoom))
+            Camera.main.orthographicSize = cameraData.zoom;  //Mathf.Clamp(cameraData.zoom, cameraData.minZoom, cameraData.maxZoom);        
+        //if (cameraData.zoom < cameraData.maxZoom) Camera.main.orthographicSize = cameraData.zoom;  //Mathf.Clamp(cameraData.zoom, cameraData.minZoom, cameraData.maxZoom);
     }
 }

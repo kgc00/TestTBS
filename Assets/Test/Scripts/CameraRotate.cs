@@ -21,15 +21,15 @@ public class CameraRotate : MonoBehaviour
         cameraData.storeTarget();
     }
 
-    void FixedUpdate()
-    {
-        if (cameraData.shouldRotateLeft())
-        {
-            cameraData.rotation = cameraData.rotation - 1;
-        }
-        else if (cameraData.shouldRotateRight())
-        {
-            cameraData.rotation = cameraData.rotation + 1;
-        }
-    }
+//    void FixedUpdate()
+//    {
+//        if (cameraData.shouldRotateLeft())
+//        {
+//            cameraData.rotation = cameraData.rotation - 1;
+//        }
+//        else if (cameraData.shouldRotateRight())
+//        {
+//            cameraData.rotation = cameraData.rotation + 1;
+//        }
+//    }
 }

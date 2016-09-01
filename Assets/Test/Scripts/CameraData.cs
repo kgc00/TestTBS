@@ -34,8 +34,8 @@ public class CameraData : MonoBehaviour
     {
         get
         {
-            return //zoom * 
-            stdDistance;
+            return 0f; //zoom * 
+            //stdDistance;
         }
     }
 
@@ -93,15 +93,15 @@ public class CameraData : MonoBehaviour
         return Input.GetAxis("Vertical") > 0 || Input.mousePosition.y > _panBufferTop;
     }
 
-    public bool shouldRotateLeft()
-    {
-        return Input.GetAxis("Fire2") > 0;
-    }
+    //public bool shouldRotateLeft()
+    //{
+    //    return Input.GetAxis("Fire2") > 0;
+    //}
 
-    public bool shouldRotateRight()
-    {
-        return Input.GetAxis("Fire1") > 0;
-    }
+    //public bool shouldRotateRight()
+    //{
+    //    return Input.GetAxis("Fire1") > 0;
+    //}
 
     //public float GetGroundHeight()
     //{
